@@ -231,7 +231,7 @@
 
 
 
-/* General styling */
+
 body {
     margin: 0;
     padding: 40px 20px;
@@ -240,7 +240,7 @@ body {
     color: #263238;
 }
 
-/* Main heading */
+
 h1 {
     text-align: center;
     color: #2563eb;
@@ -248,7 +248,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Introduction */
+
 body > p {
     text-align: center;
     color: #64748b;
@@ -256,14 +256,14 @@ body > p {
     margin-bottom: 40px;
 }
 
-/* Section heading */
+
 h2 {
     text-align: center;
     color: #263b65;
     margin-bottom: 30px;
 }
 
-/* Clubs container */
+
 .clubs-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -272,7 +272,7 @@ h2 {
     margin: auto;
 }
 
-/* Club cards */
+
 .club-card {
     background-color: #ffffff;
     padding: 30px 20px;
@@ -283,20 +283,20 @@ h2 {
     transition: 0.3s ease;
 }
 
-/* Hover effect */
+
 .club-card:hover {
     transform: translateY(-7px);
     box-shadow: 0 8px 22px rgba(37, 99, 235, 0.15);
 }
 
-/* Club titles */
+
 .club-card h3 {
     color: #2563eb;
     font-size: 21px;
     margin-bottom: 15px;
 }
 
-/* Club descriptions */
+
 .club-card p {
     color: #64748b;
     font-size: 15px;
@@ -304,7 +304,7 @@ h2 {
     min-height: 72px;
 }
 
-/* Join button */
+
 .club-card button {
     background-color: #ff7f6b;
     color: white;
@@ -317,20 +317,20 @@ h2 {
     transition: 0.3s ease;
 }
 
-/* Button hover */
+
 .club-card button:hover {
     background-color: #f45f50;
     transform: scale(1.05);
 }
 
-/* Tablet */
+
 @media (max-width: 900px) {
     .clubs-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
     .clubs-container {
         grid-template-columns: 1fr;
