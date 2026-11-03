@@ -1,1 +1,175 @@
 <! DOCTYPEHTML>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPUSVIBE-Upcoming events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Upcoming Events Section-->
+    <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <p>
+            Find out what is happening on campus guys!
+            Explore the exciting events, meet new people
+            and make a lot of memories.
+        </p>
+        <!--Event 1-->
+        <article class="event-card">
+
+    <!-- Event Poster -->
+    <div class="event-image">
+
+        <img
+            src="images/cultural-week.jpg"
+            alt="Students celebrating cultural diversity"
+        >
+
+        <!-- Date Badge -->
+        <div class="date-badge">
+            <span class="date-month">NOV</span>
+            <span class="date-day">10</span>
+        </div>
+
+        <!-- Registration Status -->
+        <span class="event-status">UPCOMING EVENT</span>
+
+    </div>
+
+    <!-- Event Information -->
+    <div class="event-content">
+
+        <!-- Category Badge -->
+        <span class="event-category">🌍 CULTURAL FESTIVAL</span>
+
+        <!-- Event Title -->
+        <h3>Campus Cultural Week</h3>
+
+        <!-- Date, Time and Venue -->
+        <div class="event-info">
+
+            <p>
+                <strong>📅 Date:</strong> 10 November 2026
+            </p>
+
+            <p>
+                <strong>🕒 Time:</strong> 9:00 AM
+            </p>
+
+            <p>
+                <strong>📍 Venue:</strong> Main Campus Grounds
+            </p>
+
+        </div>
+
+        <!-- Event Description -->
+        <p class="event-description">
+            Celebrate the beauty of cultural diversity!
+            Join fellow students for a vibrant experience
+            filled with traditions, creativity, food and
+            unforgettable performances.
+        </p>
+
+        <!-- Event Highlights -->
+        <h4>What to expect</h4>
+
+        <div class="event-highlights">
+
+            <span>Traditional Music and Fashion</span>
+
+            <span>💃 Cultural Dance</span>
+
+            <span>Perfomance by a Kenyan artist </span>
+
+        </div>
+
+        <!-- Registration Notice -->
+        <p class="registration-note">
+            Be part of the celebration!
+        </p>
+
+        <!-- View Details Button -->
+        <button
+            type="button"
+            id="details-button"
+            aria-expanded="false"
+            aria-controls="cultural-details"
+        >
+            View Details →
+        </button>
+
+        <!-- Additional Information -->
+        <div id="cultural-details" hidden>
+
+            <h4>About Cultural Week</h4>
+
+            <p>
+                Cultural Week brings students together to
+                appreciate different cultures and traditions
+                through music, dance, fashion, food and art.
+            </p>
+
+            <p>
+                <strong>Activities:</strong>
+                Cultural performances, traditional attire
+                and cultural exhibitions.
+            </p>
+
+            <p>
+                <strong>Participation:</strong>
+                All interested students are welcome.
+            </p>
+
+        </div>
+
+    </div>
+    <!-- CULTURAL WEEK VOTING POLL -->
+
+<div class="cultural-poll">
+
+    <h4> Artist Voting Poll</h4>
+
+    <p>Which Kenyan artist would you love to see perform at the cultural week?</p>
+
+    <form id="cultural-poll-form">
+
+        <label>
+            <input type="radio" name="artist" value="Njerae">
+            🎶Njerae
+        </label>
+
+        <label>
+            <input type="radio" name="artist" value="Bien">
+            💃 Bien
+        </label>
+
+        <label>
+            <input type="radio" name="artist" value="Nyashinski">
+            💃Nyashinski
+        </label>
+
+        <label>
+            <input type="radio" name="artist" value="Bensoul">
+            🎶 Bensoul
+        </label>
+
+        <label>
+            <input type="radio" name="artist" value="Watendawili">
+            🎶 Watendawili
+        </label>
+
+        <button type="submit">Submit Vote</button>
+
+    </form>
+    <!--VOTING RESULTS-->
+
+    <div id="poll-results" hidden>
+        <h4>Voting Results</h4>
+        <p>Results will appear here.</p>
+    </div>
+
+</div>
+    
+</article>
+</body>
