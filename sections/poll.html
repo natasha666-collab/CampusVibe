@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CampusVibe Artist Poll</title>
+    <title>CampusVibe - Artist Poll</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body style="background-color: #f4f7fb; padding: 40px; font-family: Arial, sans-serif;">
 
-    <div class="poll-box">
-        <h2>Artist Poll</h2>
-        <p>Vote for your favorite artist!</p>
+    <div class="poll-card">
+        <h2>Artist <span>Poll</span></h2>
+        <p>Vote for your favorite artist to headline the event!</p>
         
         <div class="artist-row">
             <b>Sauti Sol</b>
-            <p id="sauti-count">0</p>
-            <button onclick="voteSauti()">Vote</button>
+            <span id="sauti-count" class="vote-number">0</span>
+            <button class="poll-btn" onclick="voteSauti()">Vote</button>
         </div>
 
         <div class="artist-row">
             <b>Nyashinski</b>
-            <p id="nyash-count">0</p>
-            <button onclick="voteNyash()">Vote</button>
+            <span id="nyash-count" class="vote-number">0</span>
+            <button class="poll-btn" onclick="voteNyash()">Vote</button>
         </div>
     </div>
 
