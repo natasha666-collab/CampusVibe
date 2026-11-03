@@ -228,3 +228,116 @@
     background: #06265c;
     color: white;
 }
+
+
+
+/* General styling */
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f8ff;
+    color: #263238;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #2563eb;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Introduction */
+body > p {
+    text-align: center;
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Section heading */
+h2 {
+    text-align: center;
+    color: #263b65;
+    margin-bottom: 30px;
+}
+
+/* Clubs container */
+.clubs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Club cards */
+.club-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e5eaf5;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.08);
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.club-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.15);
+}
+
+/* Club titles */
+.club-card h3 {
+    color: #2563eb;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+/* Club descriptions */
+.club-card p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+    min-height: 72px;
+}
+
+/* Join button */
+.club-card button {
+    background-color: #ff7f6b;
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+.club-card button:hover {
+    background-color: #f45f50;
+    transform: scale(1.05);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .clubs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .clubs-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
