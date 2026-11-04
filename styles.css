@@ -341,3 +341,152 @@ h2 {
     }
 }
 
+
+.featured-event {
+    background: linear-gradient(135deg, #100b24, #251044);
+    color: white;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.event-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.event-label {
+    color: #ff4fa3;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.featured-event h1 {
+    font-size: 45px;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.featured-event h1 span {
+    color: #ff4fa3;
+}
+
+.event-description {
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.event-details {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.detail {
+    background: #ffffff12;
+    border: 1px solid #ffffff30;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 150px;
+}
+
+.detail h3 {
+    color: #ff4fa3;
+    font-size: 14px;
+}
+
+.countdown-container {
+    margin: 35px 0;
+}
+
+#countdown {
+    font-size: 22px;
+    color: #ff4fa3;
+    margin-top: 15px;
+}
+
+.event-button {
+    display: inline-block;
+    background: #ff4fa3;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-button:hover {
+    background: #d92c80;
+}
+
+@media (max-width: 600px) {
+    .featured-event h1 {
+        font-size: 30px;
+    }
+
+    .event-details {
+        flex-direction: column;
+    }
+}
+
+:root {
+  --primary-blue: #2563e8;
+  --coral: #ff6b5b;
+  --light-blue: #eaf1ff;
+  --navy: #0f172a;
+  --grey: #687280;
+}
+
+.countdown {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.countdown__item {
+  flex: 1 1 0;
+  max-width: 90px;
+  padding: 12px 8px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid var(--light-blue);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(37, 99, 232, 0.08);
+}
+
+.countdown__number {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  color: var(--primary-blue);
+  font-variant-numeric: tabular-nums; /* stops digits from jiggling as they change */
+}
+
+.countdown__label {
+  display: block;
+  margin-top: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--grey);
+}
+
+.countdown__message {
+  margin-top: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--coral);
+}
+
+/* Phones: slightly smaller so all four cards fit on one row */
+@media (max-width: 480px) {
+  .countdown { gap: 8px; }
+  .countdown__item { padding: 10px 4px; border-radius: 10px; }
+  .countdown__number { font-size: 1.35rem; }
+  .countdown__label { font-size: 0.65rem; }
+}
