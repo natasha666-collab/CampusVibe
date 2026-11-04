@@ -3,10 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Discover campus events, clubs, and cultural experiences at CampusVibe.">
+    <title>CampusVibe | MKU Cultural Week</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="site-header">
+        <a href="#home" class="site-logo">MKU<span>CampusVibe.</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#featured">Featured Event</a>
+            <a href="#clubs">Clubs</a>
+            <a href="#poll">Artist Poll</a>
+            <a href="#tickets">Tickets</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section" id="home">
+            <div class="welcome-copy">
+                <p class="eyebrow">Celebrating diversity. Embracing unity.</p>
+                <h1>CONNECT. DISCOVER.<br><span>BELONG.</span></h1>
+                <p>Welcome to CampusVibe, your central hub for experiencing different cultures, connecting with fellow students, and creating unforgettable memories through music, dance, fashion, and food.</p>
+                <div class="hero-actions">
+                    <a class="page-button" href="#events">Explore Events</a>
+                    <a class="page-button page-button-outline" href="#clubs">Join the Celebration</a>
+                </div>
+                <div class="event-details">
+                    <div><strong>EVENT DATE</strong><span>10 November 2026</span></div>
+                    <div><strong>VENUE</strong><span>MKU Thika Campus</span></div>
+                    <div><strong>EXPERIENCE</strong><span>Culture &amp; Diversity</span></div>
+                </div>
+            </div>
+            <div class="welcome-image">
+                <img src="logo.png.jpg" alt="Students celebrating together">
+            </div>
+        </section>
+
+        <section class="page-section events-section" id="events">
+            <div class="section-heading">
+                <p class="eyebrow">Save the date</p>
+                <h2>Upcoming Events</h2>
+                <p>Find out what is happening on campus, meet new people, and make lasting memories.</p>
+            </div>
+            <article class="event-card" id="featured">
+                <div class="event-image">
+                    <img src="images/cultural-week.jpg" alt="Students celebrating cultural diversity">
+                    <div class="date-badge"><span>NOV</span><strong>10</strong></div>
+                    <span class="event-status">UPCOMING EVENT</span>
+                </div>
+                <div class="event-content">
+                    <span class="event-category">CULTURAL FESTIVAL</span>
+                    <h3>Campus Cultural Week</h3>
+                    <div class="event-info">
+                        <p><strong>Date:</strong> 10 November 2026</p>
+                        <p><strong>Time:</strong> 9:00 AM</p>
+                        <p><strong>Venue:</strong> Main Campus Grounds</p>
+                    </div>
+                    <p class="event-description">Celebrate the beauty of cultural diversity! Join fellow students for a vibrant experience filled with traditions, creativity, food, and unforgettable performances.</p>
+                    <h4>What to expect</h4>
+                    <div class="event-highlights">
+                        <span>Traditional Music and Fashion</span>
+                        <span>Cultural Dance</span>
+                        <span>Live Kenyan Artist</span>
+                    </div>
+                    <button class="page-button details-button" type="button" aria-expanded="false" aria-controls="cultural-details">View Details</button>
+                    <div id="cultural-details" hidden>
+                        <h4>About Cultural Week</h4>
+                        <p>Cultural Week brings students together to appreciate different cultures and traditions through music, dance, fashion, food, and art.</p>
+                        <p><strong>Activities:</strong> Cultural performances, traditional attire, and cultural exhibitions.</p>
+                        <p><strong>Participation:</strong> All interested students are welcome.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="page-section clubs-section" id="clubs">
+            <div class="section-heading">
+                <p class="eyebrow">Find your people</p>
+                <h2>Clubs and Societies</h2>
+                <p>Discover student clubs, explore new interests, and get involved in campus activities.</p>
+            </div>
+            <div class="clubs-container">
+                <article class="club-card"><h3>Tech Club</h3><p>Explore the wide world of technology and coding with your peers!</p><a class="page-button" href="#contact">Join Club</a></article>
+                <article class="club-card"><h3>Sports Club</h3><p>Participate in the sports and fitness activities offered on campus.</p><a class="page-button" href="#contact">Join Club</a></article>
+                <article class="club-card"><h3>Drama and Music Club</h3><p>Enhance your talent and creativity in music, art, acting, and dance.</p><a class="page-button" href="#contact">Join Club</a></article>
+                <article class="club-card"><h3>Debate Club</h3><p>Share your ideas, sharpen your arguments, and speak your mind.</p><a class="page-button" href="#contact">Join Club</a></article>
+                <article class="club-card"><h3>Environmental Club</h3><p>Share and spread your love for the environment with fellow students.</p><a class="page-button" href="#contact">Join Club</a></article>
+                <article class="club-card"><h3>Arts and Crafts Club</h3><p>Dive into your creative side and make something with the community.</p><a class="page-button" href="#contact">Join Club</a></article>
+            </div>
+        </section>
+
+        <section class="page-section poll-section" id="poll">
+            <div class="poll-card">
+                <p class="eyebrow">You choose the headliner</p>
+                <h2>Artist <span>Poll</span></h2>
+                <p>Which Kenyan artist would you love to see perform at Cultural Week?</p>
+                <form id="artist-poll-form">
+                    <label><input type="radio" name="artist" value="Njerae" required> Njerae</label>
+                    <label><input type="radio" name="artist" value="Bien"> Bien</label>
+                    <label><input type="radio" name="artist" value="Nyashinski"> Nyashinski</label>
+                    <label><input type="radio" name="artist" value="Bensoul"> Bensoul</label>
+                    <label><input type="radio" name="artist" value="Watendawili"> Watendawili</label>
+                    <button class="page-button" type="submit">Submit Vote</button>
+                </form>
+                <p id="poll-message" class="form-message" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="page-section tickets-section" id="tickets">
+            <div class="tickets-wrap">
+                <div class="ticket-poster">
+                    <div><h3>Mic Check Live</h3><p>Mount Kenya University &bull; Live music, good vibes</p></div>
+                </div>
+                <div class="ticket-info">
+                    <p class="eyebrow">Be part of the celebration</p>
+                    <h2>Ticket Information</h2>
+                    <p>Secure your spot for the most exciting events on campus.</p>
+                    <div class="ticket-box">
+                        <div class="ticket-row"><div><h3>General Admission</h3><strong>KSh 500</strong></div><button class="page-button ticket-button" type="button" data-ticket="General Admission">Get Ticket</button></div>
+                        <div class="ticket-row"><div><h3>Student Ticket</h3><strong>KSh 300</strong></div><button class="page-button ticket-button" type="button" data-ticket="Student Ticket">Get Ticket</button></div>
+                        <div class="ticket-row"><div><h3>VIP Experience</h3><strong>KSh 1,000</strong></div><button class="page-button ticket-button" type="button" data-ticket="VIP Experience">Get Ticket</button></div>
+                    </div>
+                    <p class="ticket-note">Bring your student ID for special discounts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section register-section" id="register">
+            <div class="register-wrap">
+                <div>
+                    <p class="eyebrow">Registration</p>
+                    <h2>Register for Your Tickets</h2>
+                    <p class="section-intro">Fill in the form to request your ticket for CampusVibe events at Mount Kenya University.</p>
+                    <div class="contact-card" id="contact">
+                        <h3>Contact Information</h3>
+                        <p><strong>Venue:</strong> Mount Kenya University</p>
+                        <p><strong>Email:</strong> <a href="mailto:wainainamary163@gmail.com">wainainamary163@gmail.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+254140787663">+254 140787663</a></p>
+                    </div>
+                </div>
+                <form class="registration-form" id="regForm">
+                    <label for="name">Full Name <span>*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="your.email@domain.com" required>
+                    <label for="type">Ticket Type <span>*</span></label>
+                    <select id="type" name="type" required>
+                        <option value="">Select ticket type</option>
+                        <option>General Admission - KSh 500</option>
+                        <option>Student Ticket - KSh 300</option>
+                        <option>VIP Experience - KSh 1,000</option>
+                    </select>
+                    <label for="pay">Payment Method <span>*</span></label>
+                    <select id="pay" name="payment" required>
+                        <option value="">Select payment method</option>
+                        <option>M-Pesa</option>
+                        <option>Cash at the venue</option>
+                        <option>Bank transfer</option>
+                    </select>
+                    <button class="page-button" type="submit">Register Now</button>
+                    <p id="registration-message" class="form-message" aria-live="polite"></p>
+                    <p class="form-note">This demo form does not process payments or send registration details to a server.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Campus<span>Vibe</span></h2>
+                <p>Events. Clubs. Community.</p>
+                <div class="social-links">
+                    <a href="#contact" aria-label="Instagram">Instagram</a>
+                    <a href="#contact" aria-label="TikTok">TikTok</a>
+                    <a href="#contact" aria-label="Facebook">Facebook</a>
+                    <a href="#contact" aria-label="X">X</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#events">Events</a>
+                <a href="#clubs">Clubs</a>
+                <a href="#tickets">Tickets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: hello@campusvibe.com</p>
+                <p>Phone: +254 118630015</p>
+                <p>Location: MKU Thika Campus</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Get the latest campus events and updates.</p>
+                <form id="newsletter-form">
+                    <label class="visually-hidden" for="newsletter-email">Email address</label>
+                    <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                    <p id="newsletter-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CampusVibe. All rights reserved.</p>
+            <div><a href="#home">Privacy Policy</a><a href="#home">Terms of Service</a></div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('img').forEach((image) => {
+            image.addEventListener('error', () => {
+                image.classList.add('image-unavailable');
+                image.parentElement.classList.add('has-fallback');
+            }, { once: true });
+        });
+
+        const detailsButton = document.querySelector('.details-button');
+        const eventDetails = document.getElementById('cultural-details');
+
+        detailsButton.addEventListener('click', () => {
+            const expanded = detailsButton.getAttribute('aria-expanded') === 'true';
+            detailsButton.setAttribute('aria-expanded', String(!expanded));
+            eventDetails.hidden = expanded;
+            detailsButton.textContent = expanded ? 'View Details' : 'Hide Details';
+        });
+
+        document.querySelectorAll('[data-ticket]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const ticketType = document.getElementById('type');
+                for (const option of ticketType.options) {
+                    if (option.text.startsWith(button.dataset.ticket)) {
+                        ticketType.value = option.text;
+                        break;
+                    }
+                }
+                document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.getElementById('artist-poll-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const artist = new FormData(event.currentTarget).get('artist');
+            document.getElementById('poll-message').textContent = `Thanks! Your choice is ${artist}.`;
+        });
+
+        document.getElementById('regForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const form = event.currentTarget;
+            if (!form.reportValidity()) return;
+            const name = document.getElementById('name').value.trim();
+            const ticket = document.getElementById('type').value;
+            document.getElementById('registration-message').textContent =
+                `Thanks, ${name}! Your request for ${ticket} has been received. No payment was processed.`;
+            form.reset();
+        });
+
+        document.getElementById('newsletter-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            document.getElementById('newsletter-message').textContent =
+                'This demo form is not connected to a mailing list yet.';
+        });
+    </script>
 </body>
 </html>
