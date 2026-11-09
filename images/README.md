@@ -1,1 +1,1 @@
-g
+Contains the website's images
