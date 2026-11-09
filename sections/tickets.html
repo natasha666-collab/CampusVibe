@@ -2,206 +2,104 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CampusVibe | Tickets & Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets | CampusVibe</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --blue:#2563E8; --coral:#FF6B5B; --light:#EBF0FF; --white:#FFFFFF;
-    --navy:#0F172A; --grey:#687280;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:'Poppins',Arial,sans-serif;color:var(--navy);background:#F6F8FF;line-height:1.5}
-  a{text-decoration:none;color:inherit}
-  section{padding:70px 24px}
-  .wrap{max-width:1150px;margin:auto}
-  .btn{display:inline-block;border:none;cursor:pointer;font-family:inherit;font-weight:600;border-radius:8px;transition:.2s;background:var(--coral);color:#fff}
-  .btn:hover{background:#ec5848;transform:translateY(-1px)}
-  .btn-sm{padding:9px 20px;font-size:.78rem}
-
-  /* TICKET INFORMATION */
-  .tickets{background:var(--light)}
-  .tickets .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
-  .poster{
-    min-height:430px;border-radius:14px;overflow:hidden;
-    background:
-      linear-gradient(160deg,rgba(15,23,42,.35),rgba(15,23,42,.85)),
-      url("images/concert.jpg") center/cover no-repeat,
-      linear-gradient(135deg,#2563E8,#6D28D9 55%,#FF6B5B);
-    display:flex;align-items:flex-end;padding:26px;color:#fff;
-    box-shadow:0 12px 30px rgba(15,23,42,.25)
-  }
-  .poster h3{font-size:1.5rem}
-  .poster p{font-size:.85rem;opacity:.9}
-  .info h2{font-size:1.9rem}
-  .info>p{color:var(--grey);font-size:.9rem;margin:6px 0 22px}
-  .ticket-box{background:var(--white);border-radius:14px;padding:8px 22px;box-shadow:0 6px 20px rgba(37,99,232,.1)}
-  .ticket{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid #E6EAF5}
-  .ticket:last-child{border-bottom:none}
-  .icon{width:42px;height:42px;border-radius:50%;background:var(--light);color:var(--blue);display:grid;place-items:center;font-size:1.1rem;flex-shrink:0}
-  .txt{flex:1}
-  .txt h4{font-size:.95rem;font-weight:600}
-  .txt strong{font-size:.9rem}
-  .note{font-size:.75rem;color:var(--grey);margin-top:14px}
-
-  /* REGISTRATION FORM */
-  .register{background:#fff}
-  .register .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}
-  .register h2{font-size:2rem;color:var(--blue);line-height:1.2}
-  .lead{color:var(--grey);font-size:.9rem;margin:12px 0 28px}
-  .perks{list-style:none;display:grid;gap:18px}
-  .perks li{display:flex;align-items:center;gap:14px;font-weight:500;font-size:.9rem}
-  .perks .icon{width:38px;height:38px;border-radius:8px;font-size:1rem}
-
-  /* CONTACT INFORMATION */
-  .contact{margin-top:30px;padding:18px 20px;background:var(--light);border-radius:12px;font-size:.88rem}
-  .contact h4{color:var(--blue);margin-bottom:8px;font-size:.95rem}
-  .contact p+p{margin-top:4px}
-  .contact b{color:var(--navy)}
-  .contact a{color:var(--blue);font-weight:500}
-
-  form{background:var(--white);border:1px solid #E6EAF5;border-radius:14px;padding:30px;box-shadow:0 10px 30px rgba(37,99,232,.1)}
-  label{display:block;font-size:.78rem;font-weight:600;margin-bottom:6px}
-  label span{color:var(--coral)}
-  input,select{width:100%;padding:12px 14px;border:1px solid #D5DBEB;border-radius:8px;font-family:inherit;font-size:.85rem;background:#F9FAFF;margin-bottom:18px}
-  input:focus,select:focus{outline:2px solid var(--blue);background:#fff}
-  .btn-full{width:100%;padding:14px;font-size:.95rem}
-  #msg{margin-top:16px;padding:14px;border-radius:8px;font-size:.85rem;display:none}
-  #msg.ok{display:block;background:#E8F8EE;color:#1B7A3E}
-  #msg.err{display:block;background:#FFECEA;color:#B3261E}
-
-  @media(max-width:850px){
-    .tickets .wrap,.register .wrap{grid-template-columns:1fr}
-    .poster{min-height:260px}
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- TICKET INFORMATION: categories and sample prices -->
-<section class="tickets" id="tickets">
-  <div class="wrap">
-    <div class="poster">
-      <div>
-        <h3>Mic Check Live</h3>
-        <p>Mount Kenya University &bull; Live music, good vibes</p>
-      </div>
-    </div>
+<!-- HEADER: identical on every page; only the highlighted link changes -->
+<header class="header">
+  <a href="index.html" class="logo">Campus<span>Vibe</span></a>
+  <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="events.html">Events</a><a href="clubs.html">Clubs</a><a href="tickets.html" class="active" aria-current="page">Tickets</a><a href="about.html">About</a></nav>
+  <a href="tickets.html#register" class="btn btn-sm">Sign In</a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+</header>
 
-    <div class="info">
-      <h2>Ticket Information</h2>
-      <p>Secure your spot for the most exciting events on campus.</p>
-
-      <div class="ticket-box">
-        <div class="ticket">
-          <div class="icon">&#10003;</div>
-          <div class="txt"><h4>General Admission</h4><strong>KSh 500</strong></div>
-          <button class="btn btn-sm" data-ticket="General Admission">Get Ticket</button>
-        </div>
-        <div class="ticket">
-          <div class="icon">&#10003;</div>
-          <div class="txt"><h4>Student Ticket</h4><strong>KSh 300</strong></div>
-          <button class="btn btn-sm" data-ticket="Student Ticket">Get Ticket</button>
-        </div>
-        <div class="ticket">
-          <div class="icon">&#9733;</div>
-          <div class="txt"><h4>VIP Experience</h4><strong>KSh 1,000</strong></div>
-          <button class="btn btn-sm" data-ticket="VIP Experience">Get Ticket</button>
-        </div>
+<main id="main">
+<div class="page-hero"><h1 class="title">Tickets</h1><p class="sub">Secure your spot for the most exciting events on campus.</p></div>
+<section class="section" id="tickets">
+  <div class="wrap split">
+    <div class="poster"><h3>Mic Check Live</h3><p>Live music, good vibes</p></div>
+    <div>
+      <h2 class="title">Ticket Information</h2>
+      <p class="sub">Choose a ticket, then register below.</p>
+      <div class="box">
+        <div class="ticket"><div><h3 class="tname">General Admission</h3><b>KSh 500</b></div><button class="btn btn-sm" data-ticket="General Admission">Get Ticket</button></div>
+        <div class="ticket"><div><h3 class="tname">Student Ticket</h3><b>KSh 300</b></div><button class="btn btn-sm" data-ticket="Student Ticket">Get Ticket</button></div>
+        <div class="ticket"><div><h3 class="tname">VIP Experience</h3><b>KSh 1,000</b></div><button class="btn btn-sm" data-ticket="VIP Experience">Get Ticket</button></div>
       </div>
       <p class="note">* Bring your student ID for special discounts.</p>
     </div>
   </div>
 </section>
 
-<!-- REGISTRATION FORM + CONTACT INFORMATION -->
-<section class="register" id="register">
-  <div class="wrap">
+<section class="section light" id="register">
+  <div class="wrap split">
     <div>
-      <h2>Register for<br>Your Tickets</h2>
-      <p class="lead">Fill in the form below to secure your spot at CampusVibe events held at Mount Kenya University.</p>
-      <ul class="perks">
-        <li><div class="icon">&#128274;</div> Fast &amp; Secure</li>
-        <li><div class="icon">&#128179;</div> Easy Payment Options</li>
-        <li><div class="icon">&#9989;</div> Instant Confirmation</li>
-      </ul>
-
-      <div class="contact" id="contact">
-        <h4>Contact Information</h4>
-        <p><b>Venue:</b> Mount Kenya University</p>
-        <p><b>Email:</b> <a href="mailto:wainainamary163@gmail.com">wainainamary163@gmail.com</a></p>
-        <p><b>Phone:</b> <a href="tel:+254140787663">+254 140787663</a></p>
-      </div>
+      <h2 class="title blue">Register for<br>Your Tickets</h2>
+      <p class="sub">Fill in the form to secure your spot at CampusVibe events.</p>
+      <ul class="perks"><li>Fast &amp; Secure</li><li>Easy Payment Options</li><li>Instant Confirmation</li></ul>
     </div>
-
     <form id="regForm" novalidate>
-      <label for="name">Full Name <span>*</span></label>
-      <input type="text" id="name" placeholder="Enter your full name" required>
-
-      <label for="email">Email Address <span>*</span></label>
-      <input type="email" id="email" placeholder="your.email@domain.com" required>
-
-      <label for="type">Ticket Type <span>*</span></label>
-      <select id="type" required>
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" placeholder="Enter your full name" autocomplete="name">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" placeholder="your.email@domain.com" autocomplete="email">
+      <label for="type">Ticket Type *</label>
+      <select id="type">
         <option value="">Select ticket type</option>
         <option>General Admission - KSh 500</option>
         <option>Student Ticket - KSh 300</option>
         <option>VIP Experience - KSh 1,000</option>
       </select>
-
-      <label for="pay">Payment Method <span>*</span></label>
-      <select id="pay" required>
+      <label for="pay">Payment Method *</label>
+      <select id="pay">
         <option value="">Select payment method</option>
-        <option>M-Pesa</option>
-        <option>Cash at the venue</option>
-        <option>Bank transfer</option>
+        <option>M-Pesa</option><option>Cash at the venue</option><option>Bank transfer</option>
       </select>
-
-      <button type="submit" class="btn btn-full">Register Now</button>
+      <button type="submit" class="btn full">Register Now</button>
       <div id="msg" role="alert"></div>
     </form>
   </div>
 </section>
+</main>
 
-<script>
-  const form = document.getElementById('regForm');
-  const msg  = document.getElementById('msg');
-  const type = document.getElementById('type');
+<!-- FOOTER: identical on every page -->
+<footer class="footer">
+  <div class="footer-container">
+    <div>
+      <h2>Campus<span>Vibe</span></h2>
+      <p>Events. Clubs. Community.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+    <div class="footer-links"><h3>Quick Links</h3><a href="index.html">Home</a><a href="events.html">Events</a><a href="clubs.html">Clubs</a><a href="tickets.html">Tickets</a><a href="about.html">About</a></div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: hello@campusvibe.com</p><p>Phone: +254 700 123 456</p><p>Location: University Campus</p>
+    </div>
+    <div class="footer-newsletter">
+      <h3>Join Our Newsletter</h3>
+      <p>Get the latest campus events and updates.</p>
+      <form id="newsletterForm">
+        <label for="newsEmail" class="skip">Email address</label>
+        <input type="email" id="newsEmail" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsMsg" role="status"></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 CampusVibe. All rights reserved.</p>
+    <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
 
-  // "Get Ticket" buttons pre-select the ticket type and jump to the form
-  document.querySelectorAll('[data-ticket]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const wanted = btn.dataset.ticket;
-      for (const opt of type.options) {
-        if (opt.text.startsWith(wanted)) type.value = opt.text;
-      }
-      document.getElementById('register').scrollIntoView({behavior:'smooth'});
-    });
-  });
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const name  = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const tick  = type.value;
-    const pay   = document.getElementById('pay').value;
-
-    msg.className = '';
-    if (!name || !email || !tick || !pay) {
-      msg.textContent = 'Please fill in all the required fields.';
-      msg.className = 'err'; return;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      msg.textContent = 'Please enter a valid email address.';
-      msg.className = 'err'; return;
-    }
-    // No real payment processing (outside project scope)
-    msg.textContent = 'Thank you, ' + name + '! Your registration for ' + tick +
-      ' has been received. For questions, contact wainainamary163@gmail.com or +254 140787663.';
-    msg.className = 'ok';
-    form.reset();
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
