@@ -1,175 +1,110 @@
-<! DOCTYPEHTML>
-<html lang = "en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAMPUSVIBE-Upcoming events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Upcoming Events Section-->
     <section id="upcoming-events">
+
+    <!-- HERO BANNER -->
+    <div class="events-hero">
         <h2>Upcoming Events</h2>
-        <p>
-            Find out what is happening on campus guys!
-            Explore the exciting events, meet new people
-            and make a lot of memories.
-        </p>
-        <!--Event 1-->
+        <p>Don't miss out on what's happening on campus!</p>
+    </div>
+
+    <!-- CATEGORY FILTERS -->
+    <div class="event-filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Performances</button>
+        <button class="filter-btn">Food & Fashion</button>
+        <button class="filter-btn">Exhibitions</button>
+        <button class="filter-btn">Culture</button>
+    </div>
+
+    <!-- THREE CULTURAL WEEK CARDS -->
+    <div class="events-container">
+
+        <!-- CARD 1: PERFORMANCES (dancers photo) -->
         <article class="event-card">
+            <div class="event-image">
+                <img src="images/cultural-performances.jpg"
+                     alt="Dancers in colourful traditional dress performing with their arms raised"
+                     width="515" height="373" loading="lazy">
+                <div class="date-badge"><span>NOV</span><strong>10</strong></div>
+            </div>
+            <div class="event-content">
+                <h3>Cultural Performances</h3>
+                <p class="event-category">Culture</p>
+                <p>📍 Main Campus Grounds</p>
+                <p>🕒 Time to be announced</p>
+                <p>Enjoy traditional music, cultural dances and exciting live performances.</p>
+                <button type="button" id="details-button" aria-expanded="false" aria-controls="cultural-details">View Details</button>
+                <div id="cultural-details" hidden>
+                    <h4>About the Performances</h4>
+                    <p>Experience different cultures through music, dance and live entertainment.</p>
+                </div>
+            </div>
+        </article>
 
-    <!-- Event Poster -->
-    <div class="event-image">
+        <!-- CARD 2: FOOD AND FASHION (food photo) -->
+        <article class="event-card">
+            <div class="event-image">
+                <img src="images/cultural-food-fashion.jpg"
+                     alt="Grilled meats, roasted maize, flatbread and salad served on a patterned cloth"
+                     width="533" height="375" loading="lazy">
+                <div class="date-badge"><span>NOV</span><strong>10</strong></div>
+            </div>
+            <div class="event-content">
+                <h3>Food & Fashion Festival</h3>
+                <p class="event-category">Culture</p>
+                <p>📍 Main Campus Grounds</p>
+                <p>🕒 Time to be announced</p>
+                <p>Discover traditional dishes, beautiful cultural outfits and creative designs.</p>
+                <a href="#cultural-poll" class="ticket-btn">Explore More →</a>
+            </div>
+        </article>
 
-        <img
-            src="images/cultural-week.jpg"
-            alt="Students celebrating cultural diversity"
-        >
-
-        <!-- Date Badge -->
-        <div class="date-badge">
-            <span class="date-month">NOV</span>
-            <span class="date-day">10</span>
-        </div>
-
-        <!-- Registration Status -->
-        <span class="event-status">UPCOMING EVENT</span>
-
-    </div>
-
-    <!-- Event Information -->
-    <div class="event-content">
-
-        <!-- Category Badge -->
-        <span class="event-category">🌍 CULTURAL FESTIVAL</span>
-
-        <!-- Event Title -->
-        <h3>Campus Cultural Week</h3>
-
-        <!-- Date, Time and Venue -->
-        <div class="event-info">
-
-            <p>
-                <strong>📅 Date:</strong> 10 November 2026
-            </p>
-
-            <p>
-                <strong>🕒 Time:</strong> 9:00 AM
-            </p>
-
-            <p>
-                <strong>📍 Venue:</strong> Main Campus Grounds
-            </p>
-
-        </div>
-
-        <!-- Event Description -->
-        <p class="event-description">
-            Celebrate the beauty of cultural diversity!
-            Join fellow students for a vibrant experience
-            filled with traditions, creativity, food and
-            unforgettable performances.
-        </p>
-
-        <!-- Event Highlights -->
-        <h4>What to expect</h4>
-
-        <div class="event-highlights">
-
-            <span>Traditional Music and Fashion</span>
-
-            <span>💃 Cultural Dance</span>
-
-            <span>Perfomance by a Kenyan artist </span>
-
-        </div>
-
-        <!-- Registration Notice -->
-        <p class="registration-note">
-            Be part of the celebration!
-        </p>
-
-        <!-- View Details Button -->
-        <button
-            type="button"
-            id="details-button"
-            aria-expanded="false"
-            aria-controls="cultural-details"
-        >
-            View Details →
-        </button>
-
-        <!-- Additional Information -->
-        <div id="cultural-details" hidden>
-
-            <h4>About Cultural Week</h4>
-
-            <p>
-                Cultural Week brings students together to
-                appreciate different cultures and traditions
-                through music, dance, fashion, food and art.
-            </p>
-
-            <p>
-                <strong>Activities:</strong>
-                Cultural performances, traditional attire
-                and cultural exhibitions.
-            </p>
-
-            <p>
-                <strong>Participation:</strong>
-                All interested students are welcome.
-            </p>
-
-        </div>
+        <!-- CARD 3: EXHIBITIONS (art gallery photo) -->
+        <article class="event-card">
+            <div class="event-image">
+                <img src="images/cultural-exhibitions.jpg"
+                     alt="Colourful portrait paintings displayed on a gallery wall"
+                     width="599" height="375" loading="lazy">
+                <div class="date-badge"><span>NOV</span><strong>10</strong></div>
+            </div>
+            <div class="event-content">
+                <h3>Cultural Exhibitions</h3>
+                <p class="event-category">Culture</p>
+                <p>📍 Main Campus Grounds</p>
+                <p>🕒 Time to be announced</p>
+                <p>Explore cultural artwork, heritage, crafts and creative student displays.</p>
+                <a href="#cultural-poll" class="ticket-btn">Explore More →</a>
+            </div>
+        </article>
 
     </div>
-    <!-- CULTURAL WEEK VOTING POLL -->
 
-<div class="cultural-poll">
-
-    <h4> Artist Voting Poll</h4>
-
-    <p>Which Kenyan artist would you love to see perform at the cultural week?</p>
-
-    <form id="cultural-poll-form">
-
-        <label>
-            <input type="radio" name="artist" value="Njerae">
-            🎶Njerae
-        </label>
-
-        <label>
-            <input type="radio" name="artist" value="Bien">
-            💃 Bien
-        </label>
-
-        <label>
-            <input type="radio" name="artist" value="Nyashinski">
-            💃Nyashinski
-        </label>
-
-        <label>
-            <input type="radio" name="artist" value="Bensoul">
-            🎶 Bensoul
-        </label>
-
-        <label>
-            <input type="radio" name="artist" value="Watendawili">
-            🎶 Watendawili
-        </label>
-
-        <button type="submit">Submit Vote</button>
-
-    </form>
-    <!--VOTING RESULTS-->
-
-    <div id="poll-results" hidden>
-        <h4>Voting Results</h4>
-        <p>Results will appear here.</p>
+    <!-- ARTIST VOTING POLL -->
+    <div class="cultural-poll" id="cultural-poll">
+        <h3>🎤 Artist Voting Poll</h3>
+        <p>Which artist would you love to see perform during Cultural Week?</p>
+        <form id="cultural-poll-form">
+            <label><input type="radio" name="artist" value="Bien"> Bien</label>
+            <label><input type="radio" name="artist" value="Nyashinski"> Nyashinski</label>
+            <label><input type="radio" name="artist" value="Sauti Sol"> Sauti Sol</label>
+            <label><input type="radio" name="artist" value="Bensoul"> Bensoul</label>
+            <label><input type="radio" name="artist" value="Other"> Other</label>
+            <button type="submit">Cast Your Vote</button>
+        </form>
+        <div id="poll-results" hidden>
+            <h4>Voting Results</h4>
+            <p>Results will appear here.</p>
+        </div>
     </div>
 
-</div>
-    
-</article>
+    </section>
 </body>
+</html>
