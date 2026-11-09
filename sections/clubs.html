@@ -1,132 +1,78 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Campus Connect - Clubs and Societies</title>
-
-    <link rel="stylesheet" href="clubs.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clubs & Societies | CampusVibe</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-    <!-- Website Header -->
-    <header>
-        <h1>Campus Connect</h1>
-        <p>Discover. Connect. Participate.</p>
-    </header>
+<!-- HEADER: identical on every page; only the highlighted link changes -->
+<header class="header">
+  <a href="index.html" class="logo">Campus<span>Vibe</span></a>
+  <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="events.html">Events</a><a href="clubs.html" class="active" aria-current="page">Clubs</a><a href="tickets.html">Tickets</a><a href="about.html">About</a></nav>
+  <a href="tickets.html#register" class="btn btn-sm">Sign In</a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+</header>
 
-    <!-- Main Heading -->
-    <h1>Clubs & Societies</h1>
-
-    <p class="intro">
-        Discover student clubs, explore new interests
-        and get involved in campus activities.
-    </p>
-
-    <!-- Clubs Section -->
-    <h2>Explore Our Clubs</h2>
-
-    <div class="clubs-container">
-
-        <!-- Tech Club -->
-        <div class="club-card">
-            <img src="Images/tech.jpg" alt="Students working with technology">
-
-            <h3>Tech Club</h3>
-
-            <p>
-                Explore the wide world of technology
-                and coding with your peers!
-            </p>
-
-            <button>Join Club</button>
-        </div>
-
-        <!-- Sports Club -->
-        <div class="club-card">
-            <img src="Images/sports.jpg" alt="Students participating in sports">
-
-            <h3>Sports Club</h3>
-
-            <p>
-                Actively participate in various sports
-                and fitness activities.
-            </p>
-
-            <button>Join Club</button>
-        </div>
-
-        <!-- Music Club -->
-        <div class="club-card">
-            <img src="Images/music.jpg" alt="Students performing music">
-
-            <h3>Drama and Music Club</h3>
-
-            <p>
-                Enhance your talent and creativity
-                in music, art and dance.
-            </p>
-
-            <button>Join Club</button>
-        </div>
-
-        <!-- Debate Club -->
-        <div class="club-card">
-            <img src="Images/debate.jpg" alt="Students taking part in a debate">
-
-            <h3>Debate Club</h3>
-
-            <p>
-                Speak out your mind, share ideas
-                and build confidence.
-            </p>
-
-            <button>Join Club</button>
-        </div>
-
-        <!-- Environmental Club -->
-        <div class="club-card">
-            <img src="Images/environment.jpg" alt="Students planting trees">
-
-            <h3>Environmental Club</h3>
-
-            <p>
-                Share your love for the environment
-                through conservation activities.
-            </p>
-
-            <button>Join Club</button>
-        </div>
-
-        <!-- Arts and Crafts Club -->
-        <div class="club-card">
-            <img src="Images/arts.jpg" alt="Students creating artwork">
-
-            <h3>Arts and Crafts Club</h3>
-
-            <p>
-                Dive into your artistic side and
-                explore your creativity.
-            </p>
-
-            <button>Join Club</button>
-        </div>
-
+<main id="main">
+<div class="page-hero"><h1 class="title">Clubs &amp; Societies</h1><p class="sub">Find your passion. Meet like-minded people. Make a difference.</p></div>
+<section class="section" id="clubs"><div class="wrap"><div class="grid3">
+      <div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span><h3>Music Club</h3><p>For music lovers and creators.</p><a href="mailto:hello@campusvibe.com?subject=Join%20Music%20Club" class="link">Join Now &rarr;</a></div>
+      <div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg></span><h3>Debate Society</h3><p>Think. Discuss. Grow.</p><a href="mailto:hello@campusvibe.com?subject=Join%20Debate%20Society" class="link">Join Now &rarr;</a></div>
+      <div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.2 13.9 7 23 12 20 17 23 15.8 13.9"/></svg></span><h3>Sports Club</h3><p>Play. Compete. Build teamwork.</p><a href="mailto:hello@campusvibe.com?subject=Join%20Sports%20Club" class="link">Join Now &rarr;</a></div>
+      <div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="8" cy="10" r="1"/><circle cx="12" cy="7" r="1"/><circle cx="16" cy="10" r="1"/></svg></span><h3>Creative Arts</h3><p>Express. Create. Inspire.</p><a href="mailto:hello@campusvibe.com?subject=Join%20Creative%20Arts" class="link">Join Now &rarr;</a></div>
+      <div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span><h3>Tech &amp; Innovation</h3><p>Build. Learn. Innovate.</p><a href="mailto:hello@campusvibe.com?subject=Join%20Tech%20and%20Innovation" class="link">Join Now &rarr;</a></div>
+      <div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 12.2a6 6 0 0 0-8.5-8.5L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg></span><h3>Environmental Club</h3><p>A greener campus, a brighter future.</p><a href="mailto:hello@campusvibe.com?subject=Join%20Environmental%20Club" class="link">Join Now &rarr;</a></div>
+</div></div></section>
+<section class="section light" id="achievements">
+  <div class="wrap">
+    <div class="card" style="max-width:720px;margin:auto;text-align:center">
+      <h2 class="title">Club Achievements</h2>
+      <h3 style="margin-top:12px;color:var(--blue)">Celebrating Student Talent</h3>
+      <p style="margin-top:8px">Our clubs give students the chance to develop their skills, work together and showcase their talents.</p>
+      <a href="events.html" class="btn btn-sm" style="margin-top:8px">See Upcoming Events &rarr;</a>
     </div>
+  </div>
+</section>
+</main>
 
-    <!-- Achievements Section -->
-    <h2>Club Achievements</h2>
-
-    <div class="achievement-card">
-        <h3>Celebrating Student Talent</h3>
-
-        <p>
-            Our clubs provide students with opportunities
-            to develop their skills, work together and
-            showcase their talents.
-        </p>
+<!-- FOOTER: identical on every page -->
+<footer class="footer">
+  <div class="footer-container">
+    <div>
+      <h2>Campus<span>Vibe</span></h2>
+      <p>Events. Clubs. Community.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="X">X</a>
+      </div>
     </div>
+    <div class="footer-links"><h3>Quick Links</h3><a href="index.html">Home</a><a href="events.html">Events</a><a href="clubs.html">Clubs</a><a href="tickets.html">Tickets</a><a href="about.html">About</a></div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: hello@campusvibe.com</p><p>Phone: +254 700 123 456</p><p>Location: University Campus</p>
+    </div>
+    <div class="footer-newsletter">
+      <h3>Join Our Newsletter</h3>
+      <p>Get the latest campus events and updates.</p>
+      <form id="newsletterForm">
+        <label for="newsEmail" class="skip">Email address</label>
+        <input type="email" id="newsEmail" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsMsg" role="status"></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 CampusVibe. All rights reserved.</p>
+    <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
