@@ -155,6 +155,43 @@ document.querySelectorAll('.details-toggle').forEach(btn => {
   });
 });
 
+// ===== CLUB JOIN FORM =====
+// Each "Join Now" link has data-club; clicking it pre-selects that club in the form (the link's #join scrolls down).
+const joinForm = $('joinForm');
+if (joinForm) {
+  const clubSelect = $('club');
+  const joinMsg = $('joinMsg');
+  document.querySelectorAll('[data-club]').forEach(link => {
+    link.addEventListener('click', () => {
+      for (const opt of clubSelect.options) {
+        if (opt.text === link.dataset.club) clubSelect.value = opt.text;
+      }
+      setTimeout(() => $('joinName').focus({ preventScroll: true }), 500); // put the cursor in the first field
+    });
+  });
+  joinForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = $('joinName').value.trim();
+    const email = $('joinEmail').value.trim();
+    const club = clubSelect.value;
+    joinMsg.className = '';
+    if (!name || !email || !club) {
+      joinMsg.textContent = 'Please fill in all the required fields.';
+      joinMsg.className = 'err';
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      joinMsg.textContent = 'Please enter a valid email address.';
+      joinMsg.className = 'err';
+      return;
+    }
+    // Front-end demo: nothing is sent anywhere. A real site would send this to a server or form service.
+    joinMsg.textContent = 'Thank you, ' + name + '! Your request to join ' + club + ' has been received.';
+    joinMsg.className = 'ok';
+    joinForm.reset();
+  });
+}
+
 // ===== FOOTER NEWSLETTER =====
 const newsForm = $('newsletterForm');
 if (newsForm) {

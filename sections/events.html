@@ -1,110 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Events</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upcoming Events | CampusVibe</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <section id="upcoming-events">
+<a class="skip" href="#main">Skip to content</a>
 
-    <!-- HERO BANNER -->
-    <div class="events-hero">
-        <h2>Upcoming Events</h2>
-        <p>Don't miss out on what's happening on campus!</p>
+<!-- HEADER: identical on every page; only the highlighted link changes -->
+<header class="header">
+  <a href="../index.html" class="logo">Campus<span>Vibe</span></a>
+  <nav class="nav" aria-label="Main"><a href="../index.html">Home</a><a href="events.html" class="active" aria-current="page">Events</a><a href="clubs.html">Clubs</a><a href="tickets.html">Tickets</a></nav>
+  <a href="tickets.html#register" class="btn btn-sm">Sign In</a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+</header>
+
+<main id="main">
+<div class="page-hero"><h1 class="title">Upcoming Events</h1><p class="sub">Don't miss out on what's happening on campus!</p></div>
+<section class="section" id="events">
+  <div class="wrap">
+    <div class="tabs" role="group" aria-label="Filter events">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="Performances">Performances</button>
+      <button class="tab" data-filter="Food &amp; Fashion">Food &amp; Fashion</button>
+      <button class="tab" data-filter="Exhibitions">Exhibitions</button>
     </div>
-
-    <!-- CATEGORY FILTERS -->
-    <div class="event-filters">
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Performances</button>
-        <button class="filter-btn">Food & Fashion</button>
-        <button class="filter-btn">Exhibitions</button>
-        <button class="filter-btn">Culture</button>
-    </div>
-
-    <!-- THREE CULTURAL WEEK CARDS -->
-    <div class="events-container">
-
-        <!-- CARD 1: PERFORMANCES (dancers photo) -->
-        <article class="event-card">
-            <div class="event-image">
-                <img src="images/cultural-performances.jpg"
-                     alt="Dancers in colourful traditional dress performing with their arms raised"
-                     width="515" height="373" loading="lazy">
-                <div class="date-badge"><span>NOV</span><strong>10</strong></div>
-            </div>
-            <div class="event-content">
-                <h3>Cultural Performances</h3>
-                <p class="event-category">Culture</p>
-                <p>📍 Main Campus Grounds</p>
-                <p>🕒 Time to be announced</p>
-                <p>Enjoy traditional music, cultural dances and exciting live performances.</p>
-                <button type="button" id="details-button" aria-expanded="false" aria-controls="cultural-details">View Details</button>
-                <div id="cultural-details" hidden>
-                    <h4>About the Performances</h4>
-                    <p>Experience different cultures through music, dance and live entertainment.</p>
-                </div>
-            </div>
-        </article>
-
-        <!-- CARD 2: FOOD AND FASHION (food photo) -->
-        <article class="event-card">
-            <div class="event-image">
-                <img src="images/cultural-food-fashion.jpg"
-                     alt="Grilled meats, roasted maize, flatbread and salad served on a patterned cloth"
-                     width="533" height="375" loading="lazy">
-                <div class="date-badge"><span>NOV</span><strong>10</strong></div>
-            </div>
-            <div class="event-content">
-                <h3>Food & Fashion Festival</h3>
-                <p class="event-category">Culture</p>
-                <p>📍 Main Campus Grounds</p>
-                <p>🕒 Time to be announced</p>
-                <p>Discover traditional dishes, beautiful cultural outfits and creative designs.</p>
-                <a href="#cultural-poll" class="ticket-btn">Explore More →</a>
-            </div>
-        </article>
-
-        <!-- CARD 3: EXHIBITIONS (art gallery photo) -->
-        <article class="event-card">
-            <div class="event-image">
-                <img src="images/cultural-exhibitions.jpg"
-                     alt="Colourful portrait paintings displayed on a gallery wall"
-                     width="599" height="375" loading="lazy">
-                <div class="date-badge"><span>NOV</span><strong>10</strong></div>
-            </div>
-            <div class="event-content">
-                <h3>Cultural Exhibitions</h3>
-                <p class="event-category">Culture</p>
-                <p>📍 Main Campus Grounds</p>
-                <p>🕒 Time to be announced</p>
-                <p>Explore cultural artwork, heritage, crafts and creative student displays.</p>
-                <a href="#cultural-poll" class="ticket-btn">Explore More →</a>
-            </div>
-        </article>
-
-    </div>
-
-    <!-- ARTIST VOTING POLL -->
-    <div class="cultural-poll" id="cultural-poll">
-        <h3>🎤 Artist Voting Poll</h3>
-        <p>Which artist would you love to see perform during Cultural Week?</p>
-        <form id="cultural-poll-form">
-            <label><input type="radio" name="artist" value="Bien"> Bien</label>
-            <label><input type="radio" name="artist" value="Nyashinski"> Nyashinski</label>
-            <label><input type="radio" name="artist" value="Sauti Sol"> Sauti Sol</label>
-            <label><input type="radio" name="artist" value="Bensoul"> Bensoul</label>
-            <label><input type="radio" name="artist" value="Other"> Other</label>
-            <button type="submit">Cast Your Vote</button>
-        </form>
-        <div id="poll-results" hidden>
-            <h4>Voting Results</h4>
-            <p>Results will appear here.</p>
+    <div class="grid3">
+      <article class="card event" data-cat="Performances">
+        <div class="event-img">
+          <img src="../images/cultural-performances.jpg" alt="Dancers in colourful traditional dress performing with their arms raised" width="515" height="373" loading="lazy">
+          <b>NOV<br>10</b>
         </div>
+        <h3>Cultural Performances</h3><small class="cat">Culture</small>
+        <p>Main Campus Grounds<br>10 Nov 2026 &middot; 9:00 AM</p>
+        <p>Enjoy traditional music, cultural dances and exciting live performances.</p>
+        <button type="button" class="btn btn-sm btn-outline details-toggle" aria-expanded="false" aria-controls="details-1">View Details &rarr;</button>
+        <div class="details" id="details-1" hidden><p>Experience different cultures through music, dance and live entertainment.</p></div>
+      </article>
+      <article class="card event" data-cat="Food &amp; Fashion">
+        <div class="event-img">
+          <img src="../images/cultural-food-fashion.jpg" alt="Grilled meats, roasted maize, flatbread and salad served on a patterned cloth" width="533" height="375" loading="lazy">
+          <b>NOV<br>10</b>
+        </div>
+        <h3>Food &amp; Fashion Festival</h3><small class="cat">Culture</small>
+        <p>Main Campus Grounds<br>10 Nov 2026 &middot; 9:00 AM</p>
+        <p>Discover traditional dishes, beautiful cultural outfits and creative designs.</p>
+        <button type="button" class="btn btn-sm btn-outline details-toggle" aria-expanded="false" aria-controls="details-2">View Details &rarr;</button>
+        <div class="details" id="details-2" hidden><p>Taste traditional dishes and see cultural outfits and creative designs from across campus.</p></div>
+      </article>
+      <article class="card event" data-cat="Exhibitions">
+        <div class="event-img">
+          <img src="../images/cultural-exhibitions.jpg" alt="Colourful portrait paintings displayed on a gallery wall" width="599" height="375" loading="lazy">
+          <b>NOV<br>10</b>
+        </div>
+        <h3>Cultural Exhibitions</h3><small class="cat">Culture</small>
+        <p>Main Campus Grounds<br>10 Nov 2026 &middot; 9:00 AM</p>
+        <p>Explore cultural artwork, heritage, crafts and creative student displays.</p>
+        <button type="button" class="btn btn-sm btn-outline details-toggle" aria-expanded="false" aria-controls="details-3">View Details &rarr;</button>
+        <div class="details" id="details-3" hidden><p>Browse cultural artwork, heritage, crafts and creative student displays. All interested students are welcome.</p></div>
+      </article>
     </div>
+    <p class="empty" id="noEvents" hidden>No events in this category yet.</p>
+    <div class="cta"><p><b>Who should headline Cultural Week?</b> Have your say.</p><a href="poll.html" class="btn">Vote in the Artist Poll &rarr;</a></div>
+  </div>
+</section>
+</main>
 
-    </section>
+<!-- FOOTER: identical on every page -->
+<footer class="footer">
+  <div class="footer-container">
+    <div>
+      <h2>Campus<span>Vibe</span></h2>
+      <p>Events. Clubs. Community.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+    <div class="footer-links"><h3>Quick Links</h3><a href="../index.html">Home</a><a href="events.html">Events</a><a href="clubs.html">Clubs</a><a href="tickets.html">Tickets</a></div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: hello@campusvibe.com</p><p>Phone: +254 700 123 456</p><p>Location: University Campus</p>
+    </div>
+    <div class="footer-newsletter">
+      <h3>Join Our Newsletter</h3>
+      <p>Get the latest campus events and updates.</p>
+      <form id="newsletterForm">
+        <label for="newsEmail" class="skip">Email address</label>
+        <input type="email" id="newsEmail" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsMsg" role="status"></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 CampusVibe. All rights reserved.</p>
+    <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
 </body>
 </html>

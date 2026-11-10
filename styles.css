@@ -221,3 +221,12 @@ h2.cd-label { margin-top: 26px; font-size: .75rem; letter-spacing: 2px; color: v
 
 /* ===== BRAND BANNER at the top of the home page ===== */
 .banner { display: block; width: 100%; height: auto; max-height: 360px; object-fit: cover; object-position: center bottom; } /* on wide screens, trims the empty top, keeps the wave */
+
+/* ===== CLUB JOIN FORM (same look as the registration form) ===== */
+#joinForm { background: #fff; border: 1px solid #E6EAF5; border-radius: 14px; padding: 30px; box-shadow: 0 10px 30px rgba(37,99,232,.1); }
+#joinForm label { display: block; font-size: .78rem; font-weight: 600; margin-bottom: 6px; }
+#joinForm input, #joinForm select { width: 100%; padding: 12px 14px; border: 1px solid #D5DBEB; border-radius: 8px; font: .85rem 'Poppins', sans-serif; background: #F9FAFF; margin-bottom: 18px; }
+#joinForm input:focus, #joinForm select:focus { outline: 2px solid var(--blue); background: #fff; }
+#joinMsg { margin-top: 14px; padding: 12px; border-radius: 8px; font-size: .85rem; display: none; }
+#joinMsg.ok { display: block; background: #E8F8EE; color: #1B7A3E; }
+#joinMsg.err { display: block; background: #FFECEA; color: #B3261E; }
